@@ -8,6 +8,7 @@ import { GuessForm } from "./GuessForm";
 import { useGame } from "../hooks/useGame";
 import { useGameId } from "../hooks/useGameId";
 import { NewGameForm } from "./NewGameForm";
+import pkg from "../../package.json";
 
 const getUserId = (): string => (localStorage.id = localStorage.id || v4());
 
@@ -62,6 +63,8 @@ export const App = () => {
           onError={onError}
         />
       )}
+
+      <div style={{ position: "fixed", top: 0, right: 5 }}>v{pkg.version}</div>
     </div>
   );
 };

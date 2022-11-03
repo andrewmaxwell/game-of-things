@@ -1,5 +1,5 @@
 * {box-sizing: border-box;}
-input[type=text] {width: 100%; margin: 10px 0}
+input[type=text], textarea {width: 100%; margin: 10px 0}
 button {margin-top: 10px}
 
 body {font-family: sans-serif}

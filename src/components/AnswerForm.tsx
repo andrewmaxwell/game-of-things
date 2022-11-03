@@ -44,26 +44,30 @@ export const AnswerForm = ({
     .join(", ");
   return (
     <>
-      <input
-        type="text"
-        placeholder="Enter the Prompt"
-        value={game.prompt || ""}
-        onChange={(e) => setPrompt(gameId, e.target.value, onError)}
-      />
+      {!game.players[userId].answer && (
+        <>
+          <textarea
+            placeholder="Enter the Prompt"
+            value={game.prompt || ""}
+            onChange={(e) => setPrompt(gameId, e.target.value, onError)}
+          />
 
-      <input
-        type="text"
-        placeholder="Your Answer"
-        value={answer || ""}
-        onChange={(e) => setAnswer(e.target.value)}
-      />
+          <input
+            type="text"
+            placeholder="Your Answer"
+            value={answer || ""}
+            onChange={(e) => setAnswer(e.target.value)}
+          />
 
-      <button onClick={() => submitAnswer(gameId, userId, answer, onError)}>
-        Submit
-      </button>
+          <button onClick={() => submitAnswer(gameId, userId, answer, onError)}>
+            Submit
+          </button>
+        </>
+      )}
 
-      <p>Waiting for {waiting}</p>
+      <p style={{ marginBottom: 200 }}>Waiting for {waiting}</p>
 
+      <p>In case someone leaves:</p>
       {Object.entries(game.players)
         .filter(([id, p]) => id !== userId && !p.answer)
         .map(([id, p]) => (
