@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/game-of-things/static/css/main.620982ea.css",
-    "main.js": "/game-of-things/static/js/main.06ad1d4c.js",
+    "main.css": "/game-of-things/static/css/main.c1980a97.css",
+    "main.js": "/game-of-things/static/js/main.ebf282ce.js",
     "index.html": "/game-of-things/index.html",
-    "main.620982ea.css.map": "/game-of-things/static/css/main.620982ea.css.map",
-    "main.06ad1d4c.js.map": "/game-of-things/static/js/main.06ad1d4c.js.map"
+    "main.c1980a97.css.map": "/game-of-things/static/css/main.c1980a97.css.map",
+    "main.ebf282ce.js.map": "/game-of-things/static/js/main.ebf282ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.620982ea.css",
-    "static/js/main.06ad1d4c.js"
+    "static/css/main.c1980a97.css",
+    "static/js/main.ebf282ce.js"
   ]
 }
