@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/game-of-things/static/css/main.620982ea.css",
+    "main.js": "/game-of-things/static/js/main.06ad1d4c.js",
+    "index.html": "/game-of-things/index.html",
+    "main.620982ea.css.map": "/game-of-things/static/css/main.620982ea.css.map",
+    "main.06ad1d4c.js.map": "/game-of-things/static/js/main.06ad1d4c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.620982ea.css",
+    "static/js/main.06ad1d4c.js"
+  ]
+}
